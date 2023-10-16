@@ -1,3 +1,27 @@
-body {
-  background-color: green;
+$primaryColor: #008000;
+$gameBoardColor: lighten($primaryColor, 20%);
+$base : 100%;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
+
+body {
+  background-color: $primaryColor;
+  width: 100%;
+  height: 100%;
+  @include flex(column, center, center);
+  
+  #GameBoard {
+    border: 5px solid white;
+    border-radius: 2%;
+    width: 600px;
+    height: 800px;
+    background-color: $gameBoardColor;
+    color: white;
+  }
+}
+

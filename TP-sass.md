@@ -38,7 +38,7 @@ Renommez le fichier `style.css` en `style.scss` et supprimez son contenu.
 Importez le fichier `style.scss` dans le fichier `index.html`.
 Mettez le fond de la page en vert.
 
-### 2. Création d'une zone de jeu
+### 2. Création d'une zone de jeu   
 
 Une zone de 800px par 600px centrée sur la page.
 Le bord en blanc arrondi.
