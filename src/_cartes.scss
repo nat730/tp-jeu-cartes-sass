@@ -4,21 +4,24 @@
   justify-content: $justify;
   align-items: $align;
 }
+$width : 125px;
+$height : 188px;
 
 .card {
   margin: 50px 50px;
   padding: 10px;
   border: solid black;
   border-radius: 5%;
-  width: 100px;
-  height: 150px;
+  width: $width;
+  height: $height;
   background-color: white;
   @include flex('column', 'center', 'center');
+  transform: rotate(random() * 360deg);
 
   .card_Donnees {
     border: solid black;
-    width: 100px;
-    height: 150px;
+    width: $width;
+    height: $height;
     border-radius: 5%;
     @include flex(column, space-between, center);
     background-color: white;
@@ -46,3 +49,4 @@
     }
   }
 }
+
