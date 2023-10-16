@@ -69,7 +69,7 @@ https://sass-lang.com/documentation/modules/math#random
 
 Quand est-ce que la valeur change ?
 
-### 5. Modifiez la taille de la carte à 80px par 125px
+### 5. Modifiez la taille de la carte à 80px par 125px  
 
 Changer la taille de la carte. Maintenant que vous avez fait toutes les modifications sur la carte.
 Essayez d'utiliser au maximum les variables sass pour ne pas avoir à modifier les valeurs à plusieurs endroits.

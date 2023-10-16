@@ -15,8 +15,9 @@ $height : 188px;
   width: $width;
   height: $height;
   background-color: white;
-  @include flex('column', 'center', 'center');
-  transform: rotate(random() * 360deg);
+  @include flex(column, center, center);
+  // transform: rotate(random() * 360deg);
+  opacity: 0.5;
 
   .card_Donnees {
     border: solid black;
@@ -48,5 +49,22 @@ $height : 188px;
       font-size: 20px;
     }
   }
+
+
 }
 
+
+@mixin generate-cards($num-cards, $angle: 10deg, $distance: 20px) {
+  @for $i from 0 to $num-cards {
+    #card#{$i} {
+      position: absolute;
+      z-index: $num-cards - $i + 1;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%) rotate($i * $angle);
+      margin-left: $i * $distance;
+    }
+  }
+}
+
+@include generate-cards(6);

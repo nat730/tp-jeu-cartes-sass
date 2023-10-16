@@ -1,5 +1,8 @@
+@import "cartes";
+
 $primaryColor: #008000;
 $gameBoardColor: lighten($primaryColor, 20%);
+
 
 @mixin flex($direction, $justify, $align) {
   display: flex;
@@ -20,7 +23,8 @@ body {
     width: 800px;
     height: 600px;
     background-color: $gameBoardColor;
-    @include flex(column, start, start)
+    @include flex(column, start, start);
+    position: relative;
   }
 }
 
