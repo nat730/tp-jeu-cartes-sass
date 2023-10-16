@@ -1,0 +1,48 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.card {
+  margin: 50px 50px;
+  padding: 10px;
+  border: solid black;
+  border-radius: 5%;
+  width: 100px;
+  height: 150px;
+  background-color: white;
+  @include flex('column', 'center', 'center');
+
+  .card_Donnees {
+    border: solid black;
+    width: 100px;
+    height: 150px;
+    border-radius: 5%;
+    @include flex(column, space-between, center);
+    background-color: white;
+
+    .card_Donnees_top_left {
+      align-self: flex-start;
+      margin-right: 3px;
+      margin-bottom: 3px;
+      line-height: 0.7;
+      font-size: 20px;
+    }
+
+    .card_Donnees_center {
+      align-self: center;
+      font-size: 50px;
+    }
+
+    .card_Donnees_bot_right {
+      align-self: flex-end;
+      transform: rotate(180deg);
+      margin-right: 3px;
+      margin-bottom: 3px;
+      line-height: 0.7;
+      font-size: 20px;
+    }
+  }
+}
