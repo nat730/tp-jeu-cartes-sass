@@ -105,4 +105,4 @@ Créez une main cachée de 6 cartes. Les cartes sont côté à côte et sont tou
 Adaptez la taille de la table de jeu pour qu'elle permette d'accueillir toutes les cartes.
 En vous focalisant au maximum sur les cartes et leur positionnement, créez une table de jeu complète comme sur l'image ci-dessous.
 
-[Voici le lien vers l'exemple](https://www.google.com/search?q=beulote+en+ligne&tbm=isch&ved=2ahUKEwjyz7PthvmBAxU7pCcCHQqFCmcQ2-cCegQIABAA&oq=beulote+en+ligne&gs_lcp=CgNpbWcQAzoECCMQJzoFCAAQgAQ6BggAEAgQHjoHCAAQGBCABDoICAAQgAQQsQM6BwgAEIoFEEM6BAgAEB46BggAEAUQHjoJCAAQGBCABBAKUKMHWKEjYKkkaABwAHgAgAF0iAHKCpIBBDE2LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=K2EsZbKOCrvInsEPioqquAY&bih=830&biw=1433&client=opera&hs=2es#imgrc=KD4SujnDzBDOVM&imgdii=hc_LhhWNPLlmfM)
+[Voici le lien vers l'exemple](https://welikeit.fr/wp-content/uploads/2014/04/GameDuell_BEL_app_mobile_screens_gameplay-1024x768.jpg)

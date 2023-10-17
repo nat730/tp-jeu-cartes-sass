@@ -16,7 +16,6 @@ $height : 188px;
   height: $height;
   background-color: white;
   @include flex(column, center, center);
-  // transform: rotate(random() * 360deg);
   opacity: 0.5;
 
   .card_Donnees {
@@ -49,22 +48,35 @@ $height : 188px;
       font-size: 20px;
     }
   }
-
-
 }
 
+@mixin generate-cards($num-cards, $start-angle: -30deg, $end-angle: 30deg, $distance: 20px) {
+  $angle-range: $end-angle - $start-angle;
 
-@mixin generate-cards($num-cards, $angle: 10deg, $distance: 20px) {
   @for $i from 0 to $num-cards {
     #card#{$i} {
       position: absolute;
       z-index: $num-cards - $i + 1;
-      left: 50%;
-      top: 50%;
-      transform: translateX(-50%) translateY(-50%) rotate($i * $angle);
+      left: 40%;
+      bottom: -50%;
+      transform: translateX(-50%) translateY(-50%) rotate($start-angle + $i * calc($angle-range / ($num-cards - 1)));
       margin-left: $i * $distance;
     }
   }
 }
 
+@mixin generate-defausse($num-cards-defausse) {
+  @for $i from 1 through $num-cards-defausse {
+    #defausse#{$i} {
+      position: absolute;
+      z-index: $num-cards-defausse - $i + 1;
+      left: 30%;
+      bottom: 30%;
+      transform: rotate(random() * 360deg);
+    }
+  }
+}
+
+
 @include generate-cards(6);
+@include generate-defausse(3)
