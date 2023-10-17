@@ -1,7 +1,7 @@
 @import "cartes";
 
 $primaryColor: #008000;
-$gameBoardColor: lighten($primaryColor, 20%);
+$gameBoardColor: lighten($primaryColor, 30%);
 
 
 @mixin flex($direction, $justify, $align) {
