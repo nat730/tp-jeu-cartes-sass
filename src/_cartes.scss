@@ -4,8 +4,9 @@
   justify-content: $justify;
   align-items: $align;
 }
-$width : 125px;
-$height : 188px;
+
+$width: 125px;
+$height: 188px;
 
 .card {
   margin: 50px 50px;
@@ -77,6 +78,5 @@ $height : 188px;
   }
 }
 
-
 @include generate-cards(6);
-@include generate-defausse(3)
+@include generate-defausse(3);
